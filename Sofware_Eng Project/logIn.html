@@ -1,0 +1,83 @@
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<style>
+body {
+  background: #C0C0C0;
+}
+
+.signup-form{
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 50%;
+  height: 45%;
+  padding: 20px;
+  background-color: white;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+}
+
+.input-container {
+  display: flex;
+  margin-bottom: 15px;
+}
+
+.icon {
+  padding: 10px;
+  background: #29465B;
+  color: white;
+  min-width: 50px;
+  text-align: center;
+}
+
+.input-field {
+  flex: 1;
+  padding: 10px;
+  outline: none;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+
+.input-field:focus {
+  border: 2px solid dodgerblue;
+}
+
+.btn {
+  background-color: #29465B;
+  color: white;
+  padding: 15px 20px;
+  border: none;
+  cursor: pointer;
+  width: 100%;
+  opacity: 0.9;
+  border-radius: 5px;
+}
+
+.btn:hover {
+  opacity: 1;
+}
+</style>
+</head>
+<body>
+  <div class="content">
+    <div class="signup-form">
+	        <h1 style="text-align: center;">PMUMentor</h1>
+      <form action="/action_page.php" style="max-width:500px;margin:auto">
+        <h2 style="text-align: center;">Log in</h2>
+        <div class="input-container">
+          <i class="fa fa-user icon"></i>
+          <input class="input-field" type="text" placeholder="Username" name="usrnm">
+        </div>
+        <div class="input-container">
+          <i class="fa fa-key icon"></i>
+          <input class="input-field" type="password" placeholder="Password" name="psw">
+        </div>
+        <button type="submit" class="btn">Register</button>
+      </form>
+    </div>
+  </div>
+</body>
+</html>
