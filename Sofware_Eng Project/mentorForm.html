@@ -1,0 +1,74 @@
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<style>
+body {
+  background: #C0C0C0;
+}
+
+.homepage{
+ position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 30%;
+  height: 65%;
+  padding: 20px;
+  background-color: white;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+}
+
+.lines {
+  width: 35px;
+  height: 5px;
+  background-color: black;
+  margin: 6px 0;
+}
+.btn {
+  background-color: #29465B;
+  color: white;
+  padding: 15px 20px;
+  border: none;
+  cursor: pointer;
+  width: 100%;
+  opacity: 0.9;
+  border-radius: 5px;
+}
+.icon {
+  padding: 10px;
+  background: #29465B;
+  color: white;
+  min-width: 50px;
+  text-align: center;
+}
+.btn:hover {
+  opacity: 1;
+  }
+</style>
+</head>
+<body>
+  <div class="homepage">
+         <h2 style="text-align:center">Mentor Form</h2>
+     <form action="/action_page.php" style="max-width:500px;margin:auto">
+	 <label>Age</label>
+          <input type="datetime-local"/><br><br>
+		<label>Gender</label>
+        <input type="radio" name="g" value="male"/>Male
+      <input type="radio" name="g" value="female"/>Female<br><br>
+      <label>Year</label>
+      <select>
+		<option>Freshmen</option>
+		<option>Sophomore</option>
+		<option>Junior</option>
+		<option>Senior</option>
+		</select><br><br>
+		<label style="text-align:center">What course/subject would you like to tutor?</label><br><br>
+        <textarea rows="10" cols="45"></textarea><br><br>
+        <button type="submit" class="btn">Submit</button><br><br>
+
+      </form>
+  </div>
+</body>
+</html>
