@@ -1,0 +1,74 @@
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+body {
+  background: #C0C0C0;
+}
+
+.homepage{
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 30%;
+  height: 50%;
+  padding: 20px;
+  background-color: white;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+}
+
+.lines {
+  width: 35px;
+  height: 5px;
+  background-color: black;
+  margin: 6px 0;
+  cursor: pointer;
+}
+
+.list {
+  display: none;
+}
+
+.list-item {
+  margin: 5px 0;
+}
+button{
+	background-color:black;
+	color:white;
+	width:60%;
+	height:10%;
+	border-radius: 90px;
+	font-size:14px;
+}
+</style>
+</head>
+<body>
+  <div class="homepage">
+    <img src="icon.PNG" alt="icon" style="position: absolute; top: 20px; right: 40px; width: 30px; height: 30px;">
+    <p style="position: absolute; top: 55px; right: 20px;">My Profile</p>
+    <img src="bell.PNG" alt="notifications" style="position: absolute; top: 100px; right: 50px; width: 30px; height: 30px">
+    <p style="position: absolute; top: 135px; right: 20px;">Notifications</p>
+    <h1 style="text-align: left">Homepage</h1>
+    <div class="lines" onclick="toggleList()"></div>
+	<div class="lines" onclick="toggleList()"></div>
+    <div class="lines" onclick="toggleList()"></div>
+    <div class="list">
+      <div class="list-item"><button style="text-decoration:none; color:white">Update Info</button></div>
+      <div class="list-item"><button style="text-decoration:none; color:white">Upcoming Events</button></div>
+      <div class="list-item"><button style="text-decoration:none; color:white">View Mentors</button></div>
+      <div class="list-item"><button style="text-decoration:none; color:white">Study Material</button></div>
+      <div class="list-item"><button style="text-decoration:none; color:white">My Schedule</button></div>
+      <div class="list-item"><button style="text-decoration:none; color:white">Session History</button></div>
+    </div>
+  </div>
+
+  <script>
+    function toggleList() {
+      var list = document.querySelector('.list');
+      list.style.display = list.style.display === 'none' ? 'block' : 'none';
+    }
+  </script>
+</body>
+</html>
