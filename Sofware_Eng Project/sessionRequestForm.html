@@ -1,0 +1,76 @@
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<style>
+body {
+  background: #C0C0C0;
+}
+
+.homepage{
+ position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 30%;
+  height: 75%;
+  padding: 20px;
+  background-color: white;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+}
+
+.lines {
+  width: 35px;
+  height: 5px;
+  background-color: black;
+  margin: 6px 0;
+}
+.btn {
+  background-color: #29465B;
+  color: white;
+  padding: 15px 20px;
+  border: none;
+  cursor: pointer;
+  width: 100%;
+  opacity: 0.9;
+  border-radius: 5px;
+}
+.icon {
+  padding: 10px;
+  background: #29465B;
+  color: white;
+  min-width: 50px;
+  text-align: center;
+}
+.btn:hover {
+  opacity: 1;
+  }
+</style>
+</head>
+<body>
+  <div class="homepage">
+         <h2 style="text-align:center">Session Request Form</h2>
+		 <hr>
+		 <p style="color:green">Requesting session with (Mentor Name)</p>
+     <form action="/action_page.php" style="max-width:500px;margin:auto">
+	 <label>Choose Date & Time </label>
+          <input type="datetime-local"/><br><br>
+      <label>Specify Duration</label>
+      <select>
+		<option>30 min</option>
+		<option>1 hr</option>
+		<option>1 hr 30 min</option>
+		<option>2 hrs</option>
+		</select><br><br>
+		<label style="text-align:center">What doubts you have?</label><br><br>
+        <textarea rows="10" cols="45"></textarea><br><br>
+		<label>Would you like to meet in-person or virtually?</label><br>
+		<input type="checkbox" name="h" value="In-person"/>In-person<br>
+		<input type="checkbox" name="h" value="Virtual"/>Virtual<br>
+        <button type="submit" class="btn">Submit</button><br><br>
+
+      </form>
+  </div>
+</body>
+</html>
